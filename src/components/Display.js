@@ -58,6 +58,7 @@ const Display=()=> {
   const onTextChanged = (e) => {
     const value = e.target.value;
     setText(value);
+    setCountry(null)
     if (value.length === 0) {
       setSuggestions([]);
     } else {
